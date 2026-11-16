@@ -1,0 +1,40 @@
+<!-- 本文档用于分类归档海外云网安、Linux加固、Cloudflare与AWS认证高频工程英文术语与实战表达 -->
+
+# 海外云网安与基础设施工程高频技术词汇库
+
+> 本文档由导师全程跟进学习节点动态扩充。按模块整理海外工业界地道英文术语、专业缩写全称、实战口语化表达与国际认证高频词，作为未来 Upwork 客户文字沟通、撰写工单回复与英文考证的官方速查背书。
+
+---
+
+## 模块一：Linux 底层网络排错与系统管理 (Phase 1)
+
+| 英文专业术语 / 缩写 | 英文全称 (Full Name) | 中文释义 | 生产实战场景 / 客户沟通例句 |
+| :--- | :--- | :--- | :--- |
+| **NIC** | Network Interface Card | 网络适配器 / 网卡 | *Which NIC is bound to the public interface?* |
+| **CIDR** | Classless Inter-Domain Routing | 无类域间路由（子网掩码） | *Please specify the CIDR block for the management subnet.* |
+| **Default Gateway** | Default Gateway | 默认网关 / 下一跳出口 | *The default gateway is unreachable, causing dropped packets.* |
+| **Socket** | Socket (IP + Port pair) | 网络套接字 (IP与端口对) | *Inspect listening sockets using `ss -tulnp`.* |
+| **Drop / Loss** | Packet Drop / Packet Loss | 丢包 | *Diagnose intermittent packet loss with `mtr`.* |
+| **Latency** | Network Latency / RTT | 延迟 / 往返时延 | *High RTT observed on the cross-region link.* |
+| **Handshake** | 3-Way Handshake | TCP 三次握手 | *SYN sent but no SYN-ACK received; check firewall state.* |
+| **Loopback** | Loopback Interface (`lo`) | 本地环回接口 (`127.0.0.1`) | *Service is bound strictly to localhost/loopback.* |
+| **Hardening** | Server / OS Hardening | 服务器安全加固 | *Implement baseline Linux hardening before production.* |
+| **Brute-force** | Brute-force Attack | 暴力破解攻击 | *Deploy Fail2ban to mitigate SSH brute-force attempts.* |
+
+---
+
+## 模块二：TLS / HTTPS 与加密组网 (WireGuard)
+
+*(随着学习推进，由导师实时同步填入)*
+
+---
+
+## 模块三：Cloudflare 边缘安全与零信任 (WAF / Tunnel)
+
+*(随着学习推进，由导师实时同步填入)*
+
+---
+
+## 模块四：AWS 云网络架构与 FinOps 降本
+
+*(随着学习推进，由导师实时同步填入)*
