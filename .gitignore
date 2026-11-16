@@ -1,0 +1,6 @@
+# 个人私密上下文与导师档案（禁止上传远程公开仓库）
+GEMINI.md
+.mentor/
+.agent/
+*.private.*
+.env
