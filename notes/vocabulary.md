@@ -24,6 +24,10 @@
 | **Routing Table** | Kernel Routing Table | 内核路由表 / 转发表 | *Inspect the routing table to verify the default gateway.* |
 | **Route** | Route / Next-hop Path | 路由条目（名）/ 选路（动） | *Add a static route for the internal VPN subnet.* |
 | **Flag / Switch** | Command-line Option / Flag | 命令行参数选项（如 `-t`, `-u`） | *Combine short flags like `-tulnp` for socket diagnostics.* |
+| **Stub Resolver** | Local DNS Stub Resolver | 本地 DNS 存根解析器（如 127.0.0.53） | *systemd-resolved acts as a stub resolver on the loopback interface.* |
+| **DHCP Lease** | Dynamic Host Configuration Lease | DHCP 动态 IP 租约（UDP 67/68 端口） | *The DHCP client on UDP port 68 listens for lease renewal ACK packets.* |
+| **Socket Activation** | systemd Socket Activation | systemd 套接字按需激活技术 | *SSH uses socket activation where systemd passes the listening fd to sshd.* |
+| **Backlog** | Listen Queue Backlog | TCP 监听全连接队列上限（Send-Q 4096） | *Tune the TCP listen backlog when facing high SYN traffic.* |
 
 ---
 
