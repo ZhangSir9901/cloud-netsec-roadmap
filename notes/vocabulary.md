@@ -31,6 +31,11 @@
 | **Ed25519** | Edwards-curve Digital Signature (Ed25519) | 现代高性能椭圆曲线非对称密钥算法（替代 RSA） | *Generate an Ed25519 key pair for secure SSH authentication.* |
 | **Authorized Keys** | SSH Authorized Keys (`~/.ssh/authorized_keys`) | 目标主机受信任公钥白名单文件 | *Append the client's public key to authorized_keys.* |
 | **Permission Mode** | File / Directory Permission Mode (`chmod`) | Linux 权限位（如 `.ssh` 目录 700，公钥文件 600） | *Strict permissions (chmod 600) are enforced on authorized_keys.* |
+| **First-match Precedence** | First-match Configuration Precedence | 首匹配优先原则（先读取先命中，如防火墙 ACL 与 OpenSSH） | *OpenSSH applies first-match precedence for configuration directives.* |
+| **Commented-out** | Commented-out Line | 被注释掉的非生效行（带 `#` 符号的模板说明） | *Lines prefixed with a hash are commented-out defaults.* |
+| **Stderr** | Standard Error (`2>`) | 标准错误输出流（如未提权命令打印的 Permission denied） | *Redirect stderr to inspect permission errors cleanly.* |
+| **Privilege Escalation** | Privilege Escalation (`sudo`) | 特权提升 / 提权操作 | *Perform privilege escalation via sudo to read root-owned configurations.* |
+| **Strict Modes** | OpenSSH StrictModes | OpenSSH 权限防篡改严格检查机制 | *StrictModes prevents authentication if file permissions are overly permissive.* |
 
 ---
 
