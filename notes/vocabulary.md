@@ -20,6 +20,10 @@
 | **Loopback** | Loopback Interface (`lo`) | 本地环回接口 (`127.0.0.1`) | *Service is bound strictly to localhost/loopback.* |
 | **Hardening** | Server / OS Hardening | 服务器安全加固 | *Implement baseline Linux hardening before production.* |
 | **Brute-force** | Brute-force Attack | 暴力破解攻击 | *Deploy Fail2ban to mitigate SSH brute-force attempts.* |
+| **Brief (`-br`)** | Brief / Summary Mode | 精简概括的 / 单行简洁显示 | *Use `ip -br a` for brief network interface output.* |
+| **Routing Table** | Kernel Routing Table | 内核路由表 / 转发表 | *Inspect the routing table to verify the default gateway.* |
+| **Route** | Route / Next-hop Path | 路由条目（名）/ 选路（动） | *Add a static route for the internal VPN subnet.* |
+| **Flag / Switch** | Command-line Option / Flag | 命令行参数选项（如 `-t`, `-u`） | *Combine short flags like `-tulnp` for socket diagnostics.* |
 
 ---
 
