@@ -28,6 +28,9 @@
 | **DHCP Lease** | Dynamic Host Configuration Lease | DHCP 动态 IP 租约（UDP 67/68 端口） | *The DHCP client on UDP port 68 listens for lease renewal ACK packets.* |
 | **Socket Activation** | systemd Socket Activation | systemd 套接字按需激活技术 | *SSH uses socket activation where systemd passes the listening fd to sshd.* |
 | **Backlog** | Listen Queue Backlog | TCP 监听全连接队列上限（Send-Q 4096） | *Tune the TCP listen backlog when facing high SYN traffic.* |
+| **Ed25519** | Edwards-curve Digital Signature (Ed25519) | 现代高性能椭圆曲线非对称密钥算法（替代 RSA） | *Generate an Ed25519 key pair for secure SSH authentication.* |
+| **Authorized Keys** | SSH Authorized Keys (`~/.ssh/authorized_keys`) | 目标主机受信任公钥白名单文件 | *Append the client's public key to authorized_keys.* |
+| **Permission Mode** | File / Directory Permission Mode (`chmod`) | Linux 权限位（如 `.ssh` 目录 700，公钥文件 600） | *Strict permissions (chmod 600) are enforced on authorized_keys.* |
 
 ---
 
