@@ -46,7 +46,8 @@
      │  (模拟海外生产云服务器)          (模拟本地分支机构/客户端)     │
      │  - 1 核 vCPU / 2GB RAM          - 1 核 vCPU / 1GB RAM          │
      │  - IP: 192.168.128.128 (ens33)  - 待克隆/创建 (Node 2)         │
-     │  - SSH: ubuntu@192.168.128.128  - WireGuard Client 客户端      │
+     │  - SSH: ubutu@192.168.128.128   - WireGuard Client 客户端      │
+     │    (快捷命令: ssh node1)        - 内部私网待互通               │
      │  - Nginx 反向代理               - tcpdump 抓包测试对端         │
      │  - Fail2ban 防爆破              - 内部加密隧道内网互通验证     │
      │  - WireGuard 隧道服务端                                        │
